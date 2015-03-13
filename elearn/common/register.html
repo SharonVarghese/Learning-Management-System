@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+<style type="text/css">
+
+.ui-page {
+     background: transparent url(images/1.jpg);
+     background-size:100% 100%; 
+     background-repeat:no-repeat;
+    background-position:center center; 
+}
+.style4 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #000000;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+</head>
+
+<body >
+<div data-role="page">
+
+<div data-role="panel" id="myPanel"> 
+   <a href="index.html" class="ui-btn ui-btn-b">Home</a>
+    <a href="all.html" class="ui-btn ui-btn-b">Courses</a>
+    
+    <a href="faqs.html" class="ui-btn ui-btn-b">FAQ's</a>
+  </div> 
+
+  <div data-role="header" data-position="fixed">
+    <h1>E-HUB</h1>
+    <a href="#myPanel" class="ui-btn ui-icon-bars ui-btn-icon-left">start</a>
+  </div>
+ <div data-role="main" class="ui-content">
+        <!-- form method="post" name='registration' onSubmit="return formValidation();"-->
+        <form>
+<ul>
+<label for="username1"><font face="verdana" size="3" color="black">
+First Name:-</label> <input type="text"
+size="20" id="fname" />
+<label for="username2"><font face="verdana" size="3" 
+color="black">Last Name:-</label> <input type="text"
+size="20" id="lname" />
+<label for="email">
+<font face="verdana" size="3" color="black">EmailID:-
+</label>                                                                   
+<input type="text" name="email" size="28" id="email" />
+ 
+ <label for="mobileno">
+ <font face="verdana" size="3" color="black">Mobile No:-</label>            
+<input name="mobileno" type="text" size="10" id="phone"/>
+
+<label for="acctype">
+<font face="verdana" size="3" color="black">Account Type:-</label><br/>
+<select name="acctype" id="acctype">
+<option selected="">(Please select an account type)</option>
+<option value="A">Students</option>
+<option value="B">Teachers</option>
+<option value="C">Parents</option>
+</select><br/>
+<label for="password"><font face="verdana" size="3" color="black">Password:-</label><input type="text" id="pwd"/>
+<input type="button" name="submit" value="Submit" onclick="procedure1()" />
+	</ul>
+			</form> 
+        
+        
+</div>
+<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Go Back</a>
+</div>
+
+
+</div>
+ </body>
+ </html>

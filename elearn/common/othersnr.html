@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+<style type="text/css">
+
+.ui-page {
+     background: transparent url(images/11.jpg);
+     background-size:100% 100%; 
+     background-repeat:no-repeat;
+    background-position:center center; 
+}
+.style4 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #000000;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+<script>
+function f()
+{
+	alert("Please sign up to view ");
+	window.location.href="register.html";
+}
+</script>
+</head>
+<body>
+
+<div data-role="page">
+ 
+ <div data-role="panel" id="myPanel"> 
+   <a href="index.html" class="ui-btn ui-btn-b">Home</a>
+    <a href="allnr.html" class="ui-btn ui-btn-b">Courses</a>
+
+    <a href="faqs.html" class="ui-btn ui-btn-b">FAQ's</a>
+  </div> 
+
+  <div data-role="header" data-position="fixed">
+    <h1>E-HUB</h1>
+     <a href="#myPanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Start</a>
+	 <a href="index.html" class="ui-btn">LOGOUT</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <p><font size="+1" color="#580102">Course Catalog</font></p>
+  <div data-role="navbar">
+      <ul>
+        <li><a href="allnr.html">All</a></li>
+        <li><a href="computernr.html">Computer Science</a></li>
+        <li><a href="othersnr.html">Others</a></li>
+      </ul>
+    </div>
+    <table width="480" height="800">
+  <tr>
+    <td height="44">&nbsp;</td>
+  </tr>
+  <tr>
+  </tr>
+  
+  <tr>
+    <td><table width="480" height="800">
+      <tr>
+        <td width="600" height="300"><img src="images/2.jpg" width="219" height="231" alt=""/></td>
+		<td></td>
+		<td></td>
+        <td width="900"><font family="verdana" size="4">Hound Of Baskerville</font></td>
+		<td></td>
+		<td></td>
+        <td><a href="" class="ui-btn" onClick="f()">View Video</a></td>
+	   <td><a href="#" class="ui-btn" onClick="f()">View PDF</a></td>
+       
+</tr>
+      <tr>
+	  <td width="400" height="300"><img src="images/3.jpg" width="219" height="231" alt=""/></td>
+	  <td></td>
+		<td></td>
+        <td width="500"><font family="verdana" size="4">Tom Sawyer</font></td>
+		<td></td>
+		<td></td>
+        <td><a href="" class="ui-btn" onClick="f()">View Video</a></td>
+	   <td><a href="#" class="ui-btn" onClick="f()">View PDF</a></td>
+		
+
+	 </tr>
+
+	  <tr>
+	  <td width="400" height="300"><img src="images/5.jpg" width="219" height="231" alt=""/></td>
+	   <td></td>
+	    <td></td>
+        <td width="500"><font family="verdana" size="4">Hunger Games</font></td>
+		<td></td>
+		<td></td>
+        <td><a href="" class="ui-btn" onClick="f()">View Video</a></td>
+	   <td><a href="#" class="ui-btn" onClick="f()">View PDF</a></td>
+	  
+
+	 </tr>
+	 <tr>
+<td width="400" height="300"><img src="images/4.jpg" width="219" height="231" alt=""/></td>
+<td></td>
+ <td></td>
+        <td width="500"><font family="verdana" size="4">Death On The Nile</font></td>
+	    <td></td>
+		<td></td>
+        <td><a href="" class="ui-btn" onClick="f()">View Video</a></td>
+	   <td><a href="#" class="ui-btn" onClick="f()">View PDF</a></td>
+	  
+       
+
+	 </tr>
+        
+    </table></td>
+  </tr>
+</table>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h1>My footer</h1>
+  </div>
+</div> 
+
+</body>
+</html>
+

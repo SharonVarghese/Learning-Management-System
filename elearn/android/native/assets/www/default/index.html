@@ -1,0 +1,76 @@
+<!DOCTYPE html><html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" rel="stylesheet">
+        <style type="text/css">
+.ui-page {
+     background: transparent url(images/11.jpg);
+     -webkit-filter:filter(50%);
+     background-size:100% 100%; 
+     background-repeat:no-repeat;
+    background-position:center center; 
+}
+.style4 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #000000;
+}
+</style>
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "elearn",
+   "APP_ID": "elearn",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "1420749232",
+   "WORKLIGHT_PLATFORM_VERSION": "6.1.0.00.20131219-1900",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/elearn\/android\/"
+};</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script src="js/initOptions.js"></script>
+<script src="js/main.js"></script>
+<script src="js/message.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="panel" id="myPanel"> 
+                <a class="ui-btn ui-btn-b" href="index.html">Home</a>
+    <a class="ui-btn ui-btn-b" href="allnr.html">Courses</a>
+    <a class="ui-btn ui-btn-b" href="faqs.html">FAQ's</a>
+            </div> 
+            <div data-position="fixed" data-role="header">
+                <a class="ui-btn ui-icon-bars ui-btn-icon-left" href="#myPanel">Start</a>
+                <h1>E-HUB</h1>
+                <a class="ui-btn-right" href="login.html">Sign-in</a>
+            </div>
+            <div data-positio="fixed" id="dialog-message" style="float:center;margin:10px 
+10px 10px 10px;">
+                <p align="justify">
+                    <font color="black" size="12px">WELCOME !</font>
+                    <br>
+                    <span class="style4">E-HUB is an online student portal that
+ serves to drive better educational outcomes.</span> 
+                </p>
+                <div class="ui-content" data-role="main">
+                    <a class="ui-btn ui-corner-all ui-shadow 
+	ui-btn-inline" data-position-to="window" data-transition="fade" href="register.html">Sign-up</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

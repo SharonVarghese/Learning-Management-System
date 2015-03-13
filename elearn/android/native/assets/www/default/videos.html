@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+<script>s
+ var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'PMEFN6qPQC8',//M7lc1UVf-VE
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+</script>
+</head>
+<body >
+
+<div data-role="page">
+ 
+ <div data-role="panel" id="myPanel"> 
+   <a href="index.html" class="ui-btn ui-btn-b">Home</a>
+    <a href="all.html" class="ui-btn ui-btn-b">Courses</a>
+    <a href="#" class="ui-btn ui-btn-b">About Us</a>
+    <a href="faqs.html" class="ui-btn ui-btn-b">FAQ's</a>
+  </div> 
+
+
+  <div data-role="header" data-position="fixed">
+   
+    <h1>E-HUB</h1>
+     <a href="#myPanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Let's Get Started</a>
+	  <a href="index.html" class="ui-btn">LOGOUT</a>
+
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <input type="button" value="start" onClick="onYouTubeIframeAPIReady()"/>
+<h2><a href="courses.html"><input type="button" value="Back"></input></h2>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h1>My footer</h1>
+  </div>
+</div> 
+
+</body>
+</html>
+

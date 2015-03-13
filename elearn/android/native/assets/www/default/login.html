@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+<style type="text/css">
+
+.ui-page {
+     background: transparent url(images/11.jpg);
+     background-size:100% 100%; 
+     background-repeat:no-repeat;
+    background-position:center center; 
+}
+.style4 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #000000;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+</head>
+
+<body >
+<div data-role="page">
+
+<div data-role="panel" id="myPanel"> 
+    <a href="index.html" class="ui-btn ui-btn-b">Home</a>
+    <a href="all.html" class="ui-btn ui-btn-b">Courses</a>
+    
+    <a href="faqs.html" class="ui-btn ui-btn-b">FAQ's</a>
+  </div> 
+
+<div data-role="header" data-position="fixed">
+    <h1>E-HUB</h1>
+    <a href="#myPanel" class="ui-btn ui-icon-bars ui-btn-icon-left">start</a>
+  </div>
+ <div data-role="main" class="ui-content">
+ <h1>SIGN-IN!</h1>
+ <form>
+<ul>
+<label for="email">
+<font face="verdana" size="3" color="black">E-MAIL ID:-
+</label>                                                                   
+<input type="text" size="28" id="id" /><br>
+
+<label for="password">
+<font face="verdana" size="3" color="black">PASSWORD:-
+</label>                                                                   
+<input type="password" size="10" id="password" /><br>
+
+<input type="button" name="submit" value="Submit" onClick="procedure2()" />
+</ul>
+</form>
+</div>
+
+<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Go Back</a>
+
+
+ </body>
+ </html>

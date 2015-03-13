@@ -1,0 +1,24 @@
+Welcome to E-HUB
+
+Basically our app has two modes-
+Registered and Non-Registered Users
+
+When a non-registered user views our app
+
+He can click on the start option and only view the courses available.
+We have 3 courses page,one views all the courses available, the second is specific to computer science with topics like Android Development etc and the third is for other stuff which includes famous books like Tom Sawyer etc.
+When he clicks on the option view video or pdf , he is asked to sign up and redirected to the registration page
+When he clicks on FAQ's , he can view the questions frequently asked.
+if he wants to be a registered user to view videos and pdf's, he has to sign up at the home page and enter his details as a registered user.
+
+When a registered user views our app
+He should be registered to our app.
+If his email and password matches, he is directed to all courses page, where he can view all the courses available
+if he is specific to computer science, he can view it at the computer science page by clicking on the tab, else if he wants to see other stuff, he/she can go through the others page
+if he clicks on computer related courses view video tab, he/she is redirected to another page, where every course has 5 videos each related to the subject,if u click on any of the tabs, you are directed to another page where you can view the video.
+if he/she clicks on others page then onclicking view video, he is directed to the page which has the video.
+on clicking view pdf in both the cases, the respective pdf files will be displayed
+when he/she clicks on FAQ's, he can view the questions frequently asked.
+he can take up the assessments after the courses.
+
+He can logout from any page.

@@ -1,0 +1,18 @@
+Test Cases
+
+Registered Users:-
+
+User needs internet to run the videos
+User can't give empty values while logging in.
+In case, a user forgets its password. He/She has to re-register.
+Users can't view multiple videos at a time.
+Users can take up assessment only after he/she is logged in
+
+Non-Registered Users:-
+
+They can view the course list but not videos,pdf's or assessment.
+
+User should fill up all his details in sign up page and length of mobile number should be 10 digits.
+He/She can view videos, pdf and self assessment only by registering to our app
+
+

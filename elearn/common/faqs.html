@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+<style type="text/css">
+
+.ui-page {
+     background: transparent url(images/11.jpg);
+     background-size:100% 100%; 
+     background-repeat:no-repeat;
+    background-position:center center; 
+}
+.style4 {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #000000;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+<script>
+$(document).on("pagecreate",function(event){
+  $(window).on("orientationchange",function(event){
+    alert("Orientation changed to: " + event.orientation);
+  });                     
+});
+</script>ss
+</head>
+<body>
+<div data-role="page" >
+ 
+ <div data-role="panel" id="myPanel"> 
+   <a href="index.html" class="ui-btn ui-btn-b">Home</a>
+    <a href="all.html" class="ui-btn ui-btn-b">Courses</a>
+    
+    <a href="faqs.html" class="ui-btn ui-btn-b">FAQ's</a>
+  </div> 
+
+  <div data-role="header" data-position="fixed">
+    <h1>Help and FAQS</h1>
+     <a href="#myPanel" class="ui-btn ui-icon-bars ui-btn-icon-left">start</a>
+	</div>
+	 <div data-role="main" class="ui-content">
+		<h1>Student support center</h1>
+			<div class="ui-overlay-ds">
+<div class="ui-page-theme-c">
+
+      
+<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h1>general</h1>
+      <p><h3>What is ehub?</h3><br>
+
+E-hub offers accessible, affordable, interactive online courses that seek to empower our students to advance not just their education but their careers in technology.	We develop courses together with leaders in the tech industry to provide the most relevant and cutting-edge tech education that bridges the gap between academia and the needs of the 21st century workforce.</p>
+<p><h3>How is E-hUB different from other online course offerings?</h3><br>
+
+We develop all our courses with input not just from leading education experts but also industry experts such that the content is cutting-edge and most relevant to skills needed to advance your tech career. As such, we don't just teach you the "how's" but also the "why's." You won't just learn how to code, you will learn how to become a software developer. Our courses are also available at any time—start when you wish, fit it in your schedule, learn on-demand. And most importantly, you will learn by doing and building projects that you can showcase to others.</p>
+    <p> <h3>How can my company, university, or school use E-hub</h3><br>
+
+We've worked with many company executives, university professors and high school teachers that want to use E-HUB for their employees or students. We offer special enterprise tools and pricing. </p>
+
+	  
+	  </div>
+
+      <div data-role="collapsible">
+        <h3>Courses</h3>
+        <p><h3>What is a E-HUb course like?</h3><br>
+
+E-HUB courses are highly interactive with activities, quizzes, and exercises interspersed between short videos and interviews with instructors and industry experts. You can watch the videos and try the quizzes as many times as you like without any penalties. The quizzes are a tool to help you learn.
+
+Usually after a lesson, there will be a problem set with exercises for you to check if you have learned the material in that lesson. Just like with the quizzes, you can try them as many times as you like without penalty.
+
+Ehub courses also include a project that you can add to your portfolio. Whether it is a blog, search engine, game, or app; EHub will help you build something that demonstrates your skills to friends and employers.
+
+And perhaps the best part of being enrolled in a ehub course is access to your own personal Coach that will be there to support your success every step of the way.</p>
+<p><h3>When does each course begin?</h3><br>
+
+All of our courses are open enrollment—you can start a course at any time, on-demand, and at times that fit in your schedule.
+
+New courses often open for enrollment before the course material is available. These are noted in the course catalog as "coming soon" and will show a time when we expect the course to start on the Course Overview page. If you pre-enroll in one of these these courses, you will receive an email both when you enroll and when the course becomes available.</p>
+<p><h3>Can I enroll in any ehub course?</h3><br>
+
+Only select ehub courses are currently available for full course enrollment, but we are actively upgrading existing free courseware and creating new courses that will be available soon. Keep checking our course catalog for the latest updates and exciting new additions.</p>
+<p><h3>Are there deadlines within each course?</h3><br>
+
+There are no deadlines for E-HUB courses. You may complete them at your own pace. However, we do provide guidance as to how long you can expect the course to take if you dedicate ~5 hours per week to the course. With a full course enrollment, your personal ehub Coach can also help you personalize a schedule and set deadlines to achieve your learning goals.</p>
+<p><h3>How much time will a E-hub course take?</h3><br>
+
+Our courses vary in length and we provide an estimate of how long each course will take on the Course Overview page. This estimate is based on the time it takes a typical student who regularly dedicates 5 hours per week to complete the course. The actual time will vary considerably from individual to individual—so don't be surprised if it takes you more or less time. Ultimately, you can take as much or as little time as you need to complete the course in a time that fits your schedule.</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Coaches</h3>
+        <p><h3>Who are the ehub Coaches?</h3><br>
+
+ehub Coaches are experts in the subjects taught in ehub courses and they love to help you become experts, too. All Coaches are trained in and have the experience to make even the most difficult subjects easily understandable.</p>
+<p><h3>How can Coaches help me learn more effectively?</h3><br>
+
+Our Coaches work one-on-one with you through the entire course experience. They can confirm whether the class is right for you, suggest and monitor pacing to fit your unique lifestyle and goals, share helpful study tips, provide detailed instruction on all concepts or programming exercises in the course, and give personalized feedback on any project you are building in the course. This personalized attention can accelerate and deepen your learning to reach your career goals.</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Support</h3>
+        <p><h3>Your courses do not seem to be available to me and I cannot access the videos?</h3><br>
+
+Our video player is hosted by YouTube and there are often restrictions on YouTube in certain environments and in certain geographies. Unfortunately, these are YouTube access issues. If you don't have access to YouTube, our courses can be downloaded here.</p>
+<p><h3>What are the technical requirements for being able to use ehub?</h3><br>
+
+To participate in ehub courses, please make sure your computer meets the following minimum requirements.
+
+<ul><h3>BROWSER</h3>
+
+<li>An up-to-date version of Chrome or Firefox is strongly recommended.</li>
+<li>We also support Internet Explorer 9 and the desktop versions of Internet Explorer 10 and above (not the metro versions).</li>
+<li>At this time, mobile browsers are not supported.</li><br>
+
+<h3>INTERNET CONNECTIVITY</h3>
+
+<li>Download: 2+ Mbps recommended; minimum 1 Mbps.</li>
+<li>Upload (for full courses & proctoring): 0.5 Mbps upload speed.</li>
+<h3>OPERATING SYSTEM</h3>
+
+<li>PC: Windows XP or higher with latest updates installed (note: Internet Explorer 8 is not supported).</li>
+<li>Mac: OS X 10.6 or higher with latest updates installed.</li>
+<li>Linux: Any recent distribution that has the supported browsers installed.</li>
+<h3>YOUTUBE</h3>
+
+Ability to watch YouTube videos is required. If YouTube is blocked on your network, please contact your IT support or internet provider.
+If you do not use the html5 player, or are using Internet Explorer, you will need Adobe Flash Player v11 or above.
+<h3>PLUGINS</h3>
+
+<li>Adobe Flash Player v11 or above.</li>
+
+<li>Recommended for watching YouTube videos, especially on Internet Explorer.</li>
+<li>Required for online proctoring with ProctorU (some Georgia Tech courses only).</li>
+<h3>WEBCAM & MICROPHONE</h3>
+
+<li>Required for course graduation exit interviews (Full Course) and online proctoring (Georgia Tech).</li>
+
+<li>Webcam: 640×480 or higher resolution.</li>
+<li>Microphone: built in to most webcams and laptops, or freestanding. Not a headset for proctored exams.</li>
+<h3>GOOGLE HANGOUTS</h3>
+
+Required for onboarding sessions and exit interviews with Coaches in the Full Course Experience.
+
+<li>Sign up for Google hangout here.</li>
+<h5>CERTAIN CLASSES HAVE SPECIFIC REQUIREMENTS:</h5>
+
+<li>HTML5 requires an up-to-date version of Chrome.</li>
+<li>3D Rendering (WebGL) requires an up to date version of Chrome or Firefox (no versions of IE supported.) Most modern graphics cards should work. For more detailed information see here.</li></ul>
+      </div>
+	    <div data-role="collapsible">
+        <h3>Careers</h3>
+        <p><h3>What kinds of jobs do ehub students get?</h3><br>
+
+Students have found jobs as Software Engineers, Data Scientists, Instructors, and Web Developers. They work at a variety of companies from Fortune 500 companies, like Google and Oracle, to startups like Square and Spotify.</p>
+
+<p><h3>How can I make myself a more desirable job candidate?</h3><br>
+
+Enroll in Udacity courses that are relevant for your dream job(s). You'll learn relevant skills during the course, get important feedback from your personal Coach, and build projects that can be included in your portfolio. Also make sure to update your contact info, check the box for sharing your data with potential employers and be responsive to employers when they contact you.</p>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+       </div>
+	   </div>
+  </div>
+
+ 
+ 
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h1>My footer</h1>
+  </div>
+</div> 
+
+</body>
+</html>
